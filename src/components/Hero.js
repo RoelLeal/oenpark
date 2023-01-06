@@ -10,24 +10,24 @@ function Hero() {
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src={require('../assets/hero_assets/parking_header_dark.png')} class="d-block w-100 darker-image" alt="Estacionamiento"/>
+                <img src={require('../assets/hero_assets/parking_header_dark.png')} className="img-fluid d-block darker-image" alt="Estacionamiento"/>
                 <div class="carousel-caption d-md-block align-items-center py-0 py-lg-2 py-md-2 py-sm-2 py-xs-0 my-xs-2 mb-lg-5 pb-lg-5 pb-md-5 mb-md-5 pb-sm-5 mb-sm-5">
                     <h2 class="animate__animated animate__fadeInDown">Control</h2>
-                    <p>Mantenemos el orden y llegada de todos.</p>
+                    <p>Llevamos el orden, llegada y salida de vehiculos.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src={require('../assets/hero_assets/parking_header_dark2.png')} class="d-block w-100" alt="Parking"/>
+                <img src={require('../assets/hero_assets/parking_header_dark2.png')} className="img-fluidd-block w-100" alt="Parking"/>
                 <div class="carousel-caption d-md-block align-items-center py-0 py-lg-2 py-md-2 py-sm-2 py-xs-0 my-xs-2 mb-lg-5 pb-lg-5 pb-md-5 mb-md-5 pb-sm-5 mb-sm-5">
                     <h2>Seguridad</h2>
-                    <p>Haciendo las cosas bien por tu seguridad y la de tu vehiculo.</p>
+                    <p>Nos aseguramos que nadie entre ni salga sin que tú lo sepas.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src={require('../assets/hero_assets/parking_header_dark3.png')} class="d-block w-100" alt="Oenpark"/>
+                <img src={require('../assets/hero_assets/parking_header_dark3.png')} className="img-fluid d-block w-100" alt="Oenpark"/>
                 <div class="carousel-caption d-md-block align-items-center py-0 py-lg-2 py-md-2 py-sm-2 py-xs-0 my-xs-2 mb-lg-5 pb-lg-5 pb-md-5 mb-md-5 pb-sm-5 mb-sm-5">
                     <h2>Calidad</h2>
-                    <p>Nos aseguramos que tu instalación sea duradera y de calidad.</p>
+                    <p>Instalación duradera y diseño de calidad.</p>
                 </div>
             </div>
         </div>
