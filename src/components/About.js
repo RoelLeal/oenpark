@@ -30,7 +30,7 @@ function About() {
                   <h4 class="sec-head ms-3">Nuestro trabajo</h4>
                 </a>
                 <p class="ms-3">
-                  ¡Brindarte las mejores instalaciones para tu estacionamiento!
+                  
                 </p>
                 <ul class="ms-3 list-unstyled">
                   <li>
