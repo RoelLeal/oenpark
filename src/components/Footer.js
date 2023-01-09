@@ -2,11 +2,10 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faFacebook, 
-  faTwitter, 
-  faPinterest,
+  faTwitter,
   faWhatsapp,
   faInstagram, 
-  /*faLinkedin*/
+  faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
@@ -46,7 +45,7 @@ function Footer() {
               <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faTwitter} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
-              <li><a href="/"><FontAwesomeIcon icon={faPinterest} /></a></li>
+              <li><a href="/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
             <p class=""><a href="/" class="btn btn-tertiary btn-primary">Contáctanos</a></p>
           </div>
