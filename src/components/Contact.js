@@ -20,9 +20,19 @@ function Contact() {
     formData.append('subject', subject);
     formData.append('message', message);
 
-    fetch('https://oenpark.com/contact.php', {
+    fetch('/contact.php', {
       method: "post",
       body: new URLSearchParams(formData),
+    }).then(response => {
+      if (response.ok) {
+        alert('Enviado correctamente');
+      } else {
+        alert('Ha ocurrido un error, vuelva a intentarlo');
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      alert('Ha ocurrido un error, vuelva a intentarlo');
     });
   };
   return (
@@ -98,7 +108,7 @@ function Contact() {
                   </div>
                   <div className="form-group mt-3">
                     <input type="text" id="subject" value={subject} onChange={
-                      event => setSubject(event.target.value)}className="form-control" placeholder="Título" required />
+                      event => setSubject(event.target.value)} className="form-control" placeholder="Título" required />
                   </div>
                   <div className="form-group mt-3">
                     <textarea id="message" value={message} onChange={
