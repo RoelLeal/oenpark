@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Contact() {
 
@@ -39,7 +41,7 @@ function Contact() {
             <div className="col-md-4">
               <div className="contact-icon text-center">
                 <div className="single-icon">
-                  <FontAwesomeIcon icon={faLocation} />
+                  <FontAwesomeIcon icon={faPhone} size='2x' color='#ff7300' />
                   <p>
                     Telefono: +1 123456789<br/>
                     <span>Lunes-Viernes (9am-5pm)</span>
@@ -50,7 +52,7 @@ function Contact() {
             <div className="col-md-4">
               <div className="contact-icon text-center">
                 <div className="single-icon">
-                  <i className="bi bi-envelope"></i>
+                  <FontAwesomeIcon icon={faEnvelope} size='2x' color='#ff7300' />
                   <p>
                     Correo electronico: comercial@oenpark.com<br/>
                     <span>Web: www.oenpark.com</span>
@@ -61,7 +63,7 @@ function Contact() {
             <div className="col-md-4">
               <div className="contact-icon text-center">
                 <div className="single-icon">
-                  <i className="bi bi-geo-alt"></i>
+                  <FontAwesomeIcon icon={faLocationDot} size='2x' color='#ff7300' />
                   <p>
                     Ubicación: Circuito colonial San bernabe #319<br/>
                     <span>NL 64103, México</span>
@@ -74,7 +76,7 @@ function Contact() {
             <div className="col-md-6">
               <div className="mapouter">
                 <div className="gmap_canvas">
-                  <iframe className='w-100' title="Ubicación OenPark" height={310} id="gmap_canvas" src="https://maps.google.com/maps?q=Circuito%20colonial%20San%20bernabe%C2%A0319&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder={0} marginHeight={0} marginWidth={0}>
+                  <iframe className='w-100' title="Ubicación OenPark" height={375} id="gmap_canvas" src="https://maps.google.com/maps?q=Circuito%20colonial%20San%20bernabe%C2%A0319&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder={0} marginHeight={0} marginWidth={0}>
                   </iframe>
                   <a href="www.oenpark.com">
                   </a>

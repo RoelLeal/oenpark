@@ -53,7 +53,7 @@ function Footer() {
         <div class="row">
           <div class="col-12 text-center">
             <div class="copyright mt-5 pt-5">
-              <p><small>&copy; 2023-2024 Todos los derechos reservados.</small></p>
+              <p><small>&copy; 2021-2023 Todos los derechos reservados.</small></p>
             </div>
           </div>
         </div> 

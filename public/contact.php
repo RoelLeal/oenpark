@@ -37,7 +37,10 @@
   $recipient = "comercial@oenpark.com";
   $mailheader = "From: $email \r\n";
   if(mail($recipient, $subject, $content, $mailheader)){
-    echo "Enviado";
+    echo'<script type="text/javascript">
+    alert("Tú correo fue enviado exitosamente, enseguida nos pondremos en contacto contigo");
+    window.location.href="index.php";
+    </script>';
   }
 
   header("Location: contact.js")
