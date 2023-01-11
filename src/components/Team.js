@@ -2,7 +2,7 @@ import React from 'react'
 
 function Team() {
   return (
-    <div id="about" class="about-area area-padding">
+    <div id="team" class="about-area area-padding team">
       <div class="container">
         <div class="row mt-5 mt-md-4 pt-md-2 mt-sm-4 mt-xs-1">
           <div class="col-md-12 col-sm-12 col-xs-12">

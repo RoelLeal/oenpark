@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
   return (
@@ -13,22 +14,58 @@ function Header() {
         <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
           <li class="nav-item">
-            <a className="nav-link active text-white me-lg-1 mx-md-0 mx-sm-0 mx-xs-0 text-center hover" aria-current="page" href="/">Inicio</a>
+            <Link className="nav-link active text-white me-lg-1 mx-md-0 mx-sm-0 mx-xs-0 text-center hover" 
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Inicio</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover" href="/">Acerca de</a>
+            <Link class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover"
+              activeClass="active"
+              to="about"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Acerca de</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover" href="/">Servicios</a>
+            <Link class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover"
+              activeClass="active"
+              to="services"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Servicios</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover" href="/">Equipo</a>
+            <Link class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover" 
+              activeClass="active"
+              to="team"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Equipo</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover" href="/">Proyectos</a>
+            <Link class="nav-link text-white me-lg-1 me-md-1 me-sm-0 me-xs-0 text-center hover"
+              activeClass="active"
+              to="projects"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Proyectos</Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white me-lg-1 pe-lg-5 px-md-2 px-sm-0 px-xs-0 me-md-5 me-sm-0 me-xs-0 text-center hover" href="/">Contacto</a>
+            <Link class="nav-link text-white me-lg-1 pe-lg-5 px-md-2 px-sm-0 px-xs-0 me-md-5 me-sm-0 me-xs-0 text-center hover" activeClass="active"
+              to="contact"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              aria-current="page" href="/">Contacto</Link>
           </li>
         </ul>
       </div>

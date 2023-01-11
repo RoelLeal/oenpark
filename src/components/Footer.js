@@ -27,14 +27,14 @@ function Footer() {
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
-              <li><a href="/">Clientes</a></li>
+              <li><a href="/">Misión, visión y valores</a></li>
               <li><a href="/">Equipo</a></li>
               <li><a href="/">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
-              <li><a href="/">Ubicación</a></li>
+            <li><a href="/">Ubicación</a></li>
               <li><a href="/">Horarios</a></li>
               <li><a href="/">Galeria</a></li>
             </ul>
@@ -47,7 +47,7 @@ function Footer() {
               <li><a href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
-            <p class=""><a href="/" class="btn btn-tertiary btn-primary">Contáctanos</a></p>
+            <p class=""><a href="/" class="btn btn-tertiary btn-primary text-center">Contáctanos</a></p>
           </div>
         </div>
         <div class="row">

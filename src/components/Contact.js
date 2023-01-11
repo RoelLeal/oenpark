@@ -20,12 +20,12 @@ function Contact() {
     formData.append('subject', subject);
     formData.append('message', message);
 
-    fetch('/contact.php', {
+    fetch('https://oenpark.com/form_contact.php', {
       method: "post",
       body: new URLSearchParams(formData),
     }).then(response => {
       if (response.ok) {
-        alert('Enviado correctamente');
+        alert('Gracias, formulario enviado correctamente');
       } else {
         alert('Ha ocurrido un error, vuelva a intentarlo');
       }
@@ -36,7 +36,7 @@ function Contact() {
     });
   };
   return (
-    <div id="contact" className="contact-area">
+    <div id="contact" className="contact-area contact">
       <div className="contact-inner area-padding">
         <div className="contact-overly"></div>
         <div className="container ">

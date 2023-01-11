@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
   return (
-    <div id="about" class="about-area area-padding">
+    <div id="about" class="about-area area-padding about">
       <div class="container">
         <div class="row mt-5 mt-md-4 pt-md-2 mt-sm-4 mt-xs-1">
           <div class="col-md-12 col-sm-12 col-xs-12">

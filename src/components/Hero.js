@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <div id="carouselExampleIndicators" class="carousel slide mt-md-0 mt-sm-0 mt-xs-0" data-bs-ride="true">
+    <div id="carouselExampleIndicators" class="carousel slide mt-md-0 mt-sm-0 mt-xs-0 hero" data-bs-ride="true">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>

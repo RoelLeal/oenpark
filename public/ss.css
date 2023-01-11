@@ -47,51 +47,212 @@ a, a:hover {
     border-top: 1px solid #404040; 
 }
 /* FOOTER SECTION */
-/* SERVICES SECTION */
-@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');*{box-sizing: border-box;margin: 0;padding: 0}
-body{
-    background: #eee;
-    font-family: 'Ubuntu',sans-serif
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services-icon {
+  color: #444;
+  display: inline-block;
+  font-size: 56px;
+  line-height: 36px;
+  margin-bottom: 20px;
 }
-.box{
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
+
+.section-headline.services-head>h2 {
+  margin-bottom: 25px;
 }
-.our-services{
-    margin-top: 75px;
-    padding-bottom: 30px;
-    padding: 0 60px;
-    min-height: 198px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: all .4s ease-in-out;
-    box-shadow: 0 0 25px 0 rgba(20,27,202,.17)
+
+.services-details {
+  padding-top: 40px;
+  transition: all 0.5s ease 0s;
 }
-.our-services .icon{
-    margin-bottom: -21px;
-    transform: translateY(-50%);
-    text-align: center
+
+.services-details:hover h4,
+.services-details:hover .services-icon {
+  color: #f17901;
 }
-.our-services:hover h4, .our-services:hover p{
-    color: #fff
+
+.row.second-row {
+  margin-top: 40px;
 }
-.speedup:hover{
-    box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
-    cursor: pointer;
-    background-image: linear-gradient(-45deg, #fb0054 0%, #f17901 100%)
+
+.section-head>h2 {
+  color: #333;
 }
-.settings:hover{
-    box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
-    cursor: pointer;
-    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+
+.single-services>h4 {
+  color: #444;
+  font-size: 24px;
+  font-weight: 500;
 }
-.privacy:hover{
-    box-shadow: 0 0 25px 0 rgba(20,27,201,.05);
-    cursor: pointer;background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)}.backups:hover{box-shadow: 0 0 25px 0 rgba(20,27,201,.05);cursor: pointer;background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)}.ssl:hover{box-shadow: 0 0 25px 0 rgba(20,27,201,.05);cursor: pointer;background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)}.database:hover{box-shadow: 0 0 25px 0 rgba(20,27,201,.05);cursor: pointer;background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)}
-/* SERVICES SECTION */
+
+.single-services>p {
+  color: #333;
+  font-size: 16px;
+}
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+.pst-content {
+  padding-left: 10px;
+}
+
+#portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #444;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.filter-active {
+  border-color: #f17901;
+  background: #f17901;
+  color: #fff;
+}
+
+#portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.single-awesome-portfolio {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 25%;
+  position: relative;
+}
+
+.single-awesome-project {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.first-item {
+  margin-bottom: 30px;
+}
+
+.awesome-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.awesome-img>a {
+  display: block;
+  position: relative;
+}
+
+.single-awesome-project:hover .awesome-img>a::after {
+  opacity: 1;
+}
+
+.single-awesome-project:hover .add-actions {
+  opacity: 1;
+  bottom: 0;
+}
+
+.awesome-img>a::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.add-actions {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  bottom: 30px;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 10px 15px;
+  position: absolute;
+  transition: all 0.4s ease 0s;
+  width: 100%;
+}
+
+.project-dec {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec h4 {
+  margin-bottom: 5px;
+}
+
+.project-dec h4:hover {
+  color: #fff;
+}
+
+.project-dec h4 {
+  color: #ddd;
+  font-size: 24px;
+  margin-top: -45px;
+  padding-top: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.project-dec span {
+  color: #ddd;
+  font-size: 13px;
+}
+
+.project-action-btn {
+  display: block;
+  height: 100%;
+  text-align: center;
+  transition: all 1s ease 0s;
+  width: 100%;
+}
+
+.project-action-btn li {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-action-btn li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 
 /* CONTACT */
 .contact-area {
@@ -106,16 +267,6 @@ body{
   
   .contact-content-right {
     padding: 100px;
-  }
-  
-  .single-icon i {
-    font-size: 32px;
-    width: 50px;
-    height: 50px;
-    line-height: 56px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    color: #3ec1d5;
   }
   
   .single-icon p {
@@ -152,7 +303,7 @@ body{
   .php-email-form .sent-message {
     display: none;
     color: #fff;
-    background: #18d26e;
+    background: #f17901;
     text-align: center;
     padding: 15px;
     font-weight: 600;
@@ -172,7 +323,7 @@ body{
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
+    border: 3px solid #f17901;
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
