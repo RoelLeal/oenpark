@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
   faFacebook, 
@@ -19,24 +20,71 @@ function Footer() {
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
-              <li><a href="/">Inicio</a></li>
-              <li><a href="/">Acerca de</a></li>
-              <li><a href="/">Proyectos</a></li>
+              <li><Link 
+                    to="hero"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Inicio</Link></li>
+              <li><Link
+                    to="about"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Acerca de</Link></li>
+              <li><Link
+                    to="projects"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Proyectos</Link></li>
               <li><a href="/">Servicios</a></li>
             </ul>
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
               <li><a href="/">Misión, visión y valores</a></li>
-              <li><a href="/">Equipo</a></li>
-              <li><a href="/">Contacto</a></li>
+              <li><Link
+                    to="team"
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Equipo</Link></li>
+              <li><Link 
+                to="contact"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                aria-current="page" href="/">Contacto</Link></li>
             </ul>
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
-            <li><a href="/">Ubicación</a></li>
-              <li><a href="/">Horarios</a></li>
-              <li><a href="/">Galeria</a></li>
+            <li><Link 
+                    to="contact"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Ubicación</Link></li>
+              <li><Link 
+                    to="contact"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Horarios</Link></li>
+              <li><Link
+                    to="projects"
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                    aria-current="page" 
+                    href="/">Galeria</Link></li>
             </ul>
           </div>
           <div class="col-md text-md-center">
@@ -47,7 +95,13 @@ function Footer() {
               <li><a href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faLinkedin} /></a></li>
             </ul>
-            <p class=""><a href="/" class="btn btn-tertiary btn-primary text-center">Contáctanos</a></p>
+            <p class=""><Link class="btn btn-tertiary btn-primary text-center"
+                to="contact"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                aria-current="page" 
+                href="/">Contáctanos</Link></p>
           </div>
         </div>
         <div class="row">

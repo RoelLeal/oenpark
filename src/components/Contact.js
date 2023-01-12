@@ -26,6 +26,10 @@ function Contact() {
     }).then(response => {
       if (response.ok) {
         alert('Gracias, formulario enviado correctamente');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
       } else {
         alert('Ha ocurrido un error, vuelva a intentarlo');
       }
