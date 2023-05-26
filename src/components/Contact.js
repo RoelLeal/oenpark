@@ -78,7 +78,7 @@ function Contact() {
               <div className="contact-icon text-center">
                 <div className="single-icon">
                   <FontAwesomeIcon icon={faLocationDot} size='2x' color='#ff7300' />
-                  <p>
+                  <p> 
                     AV. FUERZA AÉREA MEXICANA<br/>
                     <span>430 COLONIA FEDERAL VENUSTIANO CARRANZA  CIUDAD	CDMX CP 15700</span>
                   </p>
