@@ -10,10 +10,14 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import './css/style.css';
+import { Link } from "react-scroll";
 
 function App() {
 
   const [showButton, setShowButton] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
@@ -31,6 +35,11 @@ function App() {
             behavior: 'smooth',
         });
     };
+
+    const handleClicked = () => {
+      setIsActive(true);
+      redirectToNewPage('https://wa.me/message/GTM2SUFRN2UGE1');
+    }
 
   return (
     <Fragment>
@@ -56,9 +65,16 @@ function App() {
           <FontAwesomeIcon icon={faArrowUp} size='2x' color='#fff' />
         </button>
       )}
+      <div className={`floating-whatsapp-icon ${isActive ? 'active' : ''}`} onClick={handleClicked}>
+        <FontAwesomeIcon icon={faWhatsapp} size='3x' color='green' />
+      </div>
     </Fragment>
     
   );
+}
+
+function redirectToNewPage(url) {
+  window.open(url, '_blank');
 }
 
 export default App;

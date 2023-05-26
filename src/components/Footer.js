@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';// eslint-disable-next-line
 import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -89,7 +89,7 @@ function Footer() {
           </div>
           <div class="col-md text-md-center">
             <ul class="social list-unstyled">
-              <li><a href="/"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+              <li><a href="https://wa.me/message/GTM2SUFRN2UGE1"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faInstagram} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faTwitter} /></a></li>
               <li><a href="/"><FontAwesomeIcon icon={faFacebook} /></a></li>
